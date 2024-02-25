@@ -3,10 +3,11 @@
 ## Verify the monitoring installation
 
 *TODO:* run `kubectl` command to show the running pods and services for all components. Take a screenshot of the output and include it here to verify the installation
-
+	kubectl get pods,svc -n monitoring
+	filename: answer-img\kubect_get_pods_svs_monitoring.png
 ## Setup the Jaeger and Prometheus source
 *TODO:* Expose Grafana to the internet and then setup Prometheus as a data source. Provide a screenshot of the home page after logging into Grafana.
-
+	<img src="https://github.com/MattRo74/Udacity_Observability/blob/main/answer-img/grafana_homepage.png">
 ## Create a Basic Dashboard
 *TODO:* Create a dashboard in Grafana that shows Prometheus as a source. Take a screenshot and include it here.
 
