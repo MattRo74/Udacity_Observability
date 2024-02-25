@@ -50,16 +50,11 @@
 *TODO:* It is important to know why we want to measure certain metrics for our customer. Describe in detail 5 metrics to measure these SLIs. 
 
 <ol>
-  <li>Request Latency</li>
-  The lower the latency for a service, the better a customer will judge it. For example, low latency in streaming services can be a competitive advantage. Therefore, I assume that an SLI is very important in terms of latency.
-  <li>Availability</li>
-  As a customer, I expect a high level of accessibility from a service. Especially if I have to pay a fee for this service. Let's take the streaming service again. Less Availabilty lead to customer dissatisfaction and ultimately to termination of the service. Therefore, this KPI will be very important.
-  <li>Error Rate</li>
-  Error rates measures the incorrect API requests to a service. This information is important for the developer team, so that they can specifically fix problems. What is critical is when users accidentally receive data that they are not actually supposed to receive. This can lead to a data protection issue.
-  <li>Throughput</li>
-  Throughput is a measure of how many units of information a system can process in a given period of time. This metric has a significant role in data transfer and storage throughput. For example the better the throughput of a data driven service is, the better the experience of the user.
-  <li>Quality</li>
-  If a service is no longer available (because of an overload or a lost connection), it may still be possible to use it based on the previously downloaded data. For example, with a gaming app if the connection to the server has been lost. You can still continue with the app.
+  <li>**Request Latency:** The lower the latency for a service, the better a customer will judge it. For example, low latency in streaming services can be a competitive advantage. Therefore, I assume that an SLI is very important in terms of latency.</li>
+  <li>**Availability:** As a customer, I expect a high level of accessibility from a service. Especially if I have to pay a fee for this service. Let's take the streaming service again. Less Availabilty lead to customer dissatisfaction and ultimately to termination of the service. Therefore, this KPI will be very important.</li>
+  <li>**Error Rate:** Error rates measures the incorrect API requests to a service. This information is important for the developer team, so that they can specifically fix problems. What is critical is when users accidentally receive data that they are not actually supposed to receive. This can lead to a data protection issue.</li>
+  <li>**Throughput:** Throughput is a measure of how many units of information a system can process in a given period of time. This metric has a significant role in data transfer and storage throughput. For example the better the throughput of a data driven service is, the better the experience of the user.</li>
+  <li>**Quality:** If a service is no longer available (because of an overload or a lost connection), it may still be possible to use it based on the previously downloaded data. For example, with a gaming app if the connection to the server has been lost. You can still continue with the app.</li>
 </ol>
 
 
