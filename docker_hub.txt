@@ -1,0 +1,14 @@
+obv-frontend
+docker build -t obv-frontend .
+docker tag obv-frontend mattrohe/obv-frontend
+docker push mattrohe/obv-frontend
+
+obv-backend
+docker build -t obv-backend .
+docker tag obv-backend mattrohe/obv-backend
+docker push mattrohe/obv-backend
+
+obv-trial
+docker build -t obv-trial .
+docker tag obv-trial mattrohe/obv-trial
+docker push mattrohe/obv-trial
