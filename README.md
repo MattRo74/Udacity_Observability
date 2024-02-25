@@ -4,16 +4,16 @@
 
 *TODO:* run `kubectl` command to show the running pods and services for all components. Take a screenshot of the output and include it here to verify the installation
 
-	kubectl get pods,svc -n monitoring:
+	<p>kubectl get pods,svc -n monitoring:</p>
 	<img src="https://github.com/MattRo74/Udacity_Observability/blob/main/answer-img/kubect_get_pods_svs_monitoring.png">
 
-	kubectl get pods,svc -n observability:
+	<p>kubectl get pods,svc -n observability:</p>
 	<img src="https://github.com/MattRo74/Udacity_Observability/blob/main/answer-img/kubect_get_pods_svs_observability.png">
 
-	kubectl get pods -A:
+	<p>kubectl get pods -A:</p>
 	<img src="https://github.com/MattRo74/Udacity_Observability/blob/main/answer-img/kubectl_get_pods_A.png">
 
-	kubectl get svc -A:
+	<p>kubectl get svc -A:</p>
 	<img src="https://github.com/MattRo74/Udacity_Observability/blob/main/answer-img/kubectl_get_svc_A.png">
 
 
