@@ -1,0 +1,4 @@
+    Latency — The time taken to serve a request (usually measured in ms).
+    Traffic — The amount of stress on a system from demand (such as the number of HTTP requests/second).
+    Errors — The number of requests that are failing (such as number of HTTP 500 responses).
+    Saturation — The overall capacity of a service (such as the percentage of memory or CPU used).

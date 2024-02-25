@@ -28,11 +28,42 @@
 ## Create a Basic Dashboard
 *TODO:* Create a dashboard in Grafana that shows Prometheus as a source. Take a screenshot and include it here.
 
+<img src="https://github.com/MattRo74/Udacity_Observability/blob/main/answer-img/basic_dashboard.png">
+
 ## Describe SLO/SLI
 *TODO:* Describe, in your own words, what the SLIs are, based on an SLO of *monthly uptime* and *request response time*.
 
+**Service Level Objectives (SLOs)** are measureable goals (set by your team). It is important, that this goals are defined from the customers perspective and also, a specific time period needs to be defined:
+
+*monthly uptime*: The User expects an almonst 100 % reachability of the service.
+-> The goal is set to a monthly uptime of 99.5 %
+*request response time*: The User expects a really short response time of the service. 
+-> The goal is set to a request response time of 50 ms or less each month.
+
+**Service Level Indicators (SLIs)** are metrics to measure the defined goals (SLOs). This measurements shows whether you achieved your set goals or not.
+
+*monthly uptime*: The service has an uptime of 99.7 % last month
+*request response time*: The request response time was on average 10 ms last month.
+
+
 ## Creating SLI metrics.
 *TODO:* It is important to know why we want to measure certain metrics for our customer. Describe in detail 5 metrics to measure these SLIs. 
+
+<ol>
+  <li>Latency</li>
+  Text
+  <li>Availability</li>
+  Text
+  <li>Error Rate</li>
+  Text
+  <li>Throughput</li>
+  text
+  <li>Response Time</li>
+  Text
+</ol>
+
+
+
 
 ## Create a Dashboard to measure our SLIs
 *TODO:* Create a dashboard to measure the uptime of the frontend and backend services We will also want to measure to measure 40x and 50x errors. Create a dashboard that show these values over a 24 hour period and take a screenshot.
