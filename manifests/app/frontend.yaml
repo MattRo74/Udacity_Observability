@@ -2,12 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: frontend-app
-  annotations:
-    prometheus.io/scrape: 'true'
-    prometheus.io/path: /metrics
-    prometheus.io/port: frontend
-  labels:
-    app: frontend
 spec:
   replicas: 3
   selector:
@@ -21,45 +15,17 @@ spec:
       containers:
       - name: frontend
         image: mattrohe/obv-frontend:latest
-        imagePullPolicy: Always
         ports:
         - containerPort: 8080
-      restartPolicy: Always
 ---
 apiVersion: v1
 kind: Service
 metadata:
   name: frontend-service
-  annotations:
-    prometheus.io/port: "9090"
-    prometheus.io/scrape: "true"
-  labels:
-    app: frontend 
 spec:
   selector:
     app: frontend
   ports:
-    - name: frontend
-      port: 8080
+    - port: 8080
       targetPort: 8080
   type: LoadBalancer
----
-apiVersion: monitoring.coreos.com/v1
-kind: ServiceMonitor
-metadata:
-  name: frontend
-  namespace: monitoring
-  labels:
-    app: frontend
-    release: prometheus
-spec:
-  selector:
-    matchLabels:
-      app: frontend
-  endpoints:
-  - port: frontend
-    path: /metrics
-    interval: 15s
-  namespaceSelector:
-    matchNames:
-    - default
